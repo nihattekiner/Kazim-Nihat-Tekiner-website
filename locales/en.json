@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Hi, I'm Nihat",
+    "subtitle": "Software Test Engineer"
+  },
+  "code": {
+    "title": "Software Development In Test"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "As a software test engineer, I play an important role in quality software development processes. I ensure the reliability of software projects using modern testing tools and methodologies.",
+    "p2": "I have experience in automation testing, performance testing, and API testing. With my continuous learning and development-focused approach, I keep up with innovations in technology.",
+    "p3": "With my team-oriented, problem-solving focused, and detail-oriented working style, I contribute to the success of projects."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "job1": {
+      "title": "Senior Test Engineer",
+      "company": "ABC Technology",
+      "description": "Developing comprehensive test strategies for web and mobile applications, managing automation test processes, and providing team leadership."
+    },
+    "job2": {
+      "title": "Test Engineer",
+      "company": "XYZ Software",
+      "description": "Performing manual and automated tests, writing test scenarios, bug reporting, and preparing test documentation."
+    }
+  },
+  "education": {
+    "title": "Education & Certifications",
+    "degree": {
+      "title": "Computer Engineering",
+      "school": "ABC University"
+    },
+    "cert1": {
+      "title": "ISTQB Foundation Level",
+      "org": "ISTQB"
+    },
+    "cert2": {
+      "title": "Selenium WebDriver",
+      "org": "Udemy"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "project1": {
+      "title": "E-Commerce Test Automation",
+      "description": "Comprehensive e-commerce test automation project developed using Selenium and TestNG. Test scenarios covering user registration, login, product search, and purchase processes."
+    },
+    "project2": {
+      "title": "Mobile Application Testing",
+      "description": "Mobile application test framework developed using Cypress. Comprehensive test suite including cross-browser tests and responsive design checks."
+    },
+    "project3": {
+      "title": "API Test Suite",
+      "description": "Comprehensive API test suite developed with REST Assured. Framework including CRUD operations, authentication, and data validation tests."
+    }
+  },
+  "skills": {
+    "title": "Tools & Skills"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "You can use the channels below to get in touch with me. I'm always open to new opportunities and collaborations."
+  },
+  "footer": {
+    "copyright": "© 2025 All rights reserved."
+  }
+}

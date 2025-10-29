@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Software Test Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+    <!-- Language Selection Modal -->
+    <div id="language-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Choose Your Language / Dil Seçin</h2>
+            <div class="language-buttons">
+                <button class="lang-btn" data-lang="tr">
+                    <i class="fas fa-flag"></i>
+                    Türkçe
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <i class="fas fa-flag"></i>
+                    English
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#home" data-i18n-key="nav.home"><i class="fas fa-home"></i> Ana Sayfa</a>
+                <a href="#about" data-i18n-key="nav.about"><i class="fas fa-user-circle"></i> Hakkımda</a>
+                <a href="#experience" data-i18n-key="nav.experience"><i class="fas fa-briefcase"></i> Deneyim</a>
+                <a href="#education" data-i18n-key="nav.education"><i class="fas fa-graduation-cap"></i> Eğitim</a>
+                <a href="#projects" data-i18n-key="nav.projects"><i class="fas fa-laptop-code"></i> Projeler</a>
+                <a href="#skills" data-i18n-key="nav.skills"><i class="fas fa-cogs"></i> Yetenekler</a>
+                <a href="#contact" data-i18n-key="nav.contact"><i class="fas fa-paper-plane"></i> İletişim</a>
+            </div>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="control-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="language-switcher">
+                    <button class="lang-switch-btn" data-lang="tr" id="tr-btn">TR</button>
+                    <button class="lang-switch-btn" data-lang="en" id="en-btn">EN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero hidden-fade-in">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span data-i18n-key="hero.greeting">Merhaba, ben</span>
+                    <span class="neon-text">Nihat</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n-key="hero.subtitle">Yazılım Test Mühendisi</p>
+                
+                <div class="code-block">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="code-title">sdet.js</span>
+                    </div>
+                    <div class="code-content">
+                        <span class="code-line"><span class="code-keyword">const</span> <span class="code-variable" data-i18n-key="code.title">Software Development In Test</span> = {</span>
+                        <span class="code-line">  <span class="code-property">name</span>: <span class="code-string">"Nihat"</span>,</span>
+                        <span class="code-line">  <span class="code-property">role</span>: <span class="code-string">"Test Engineer"</span>,</span>
+                        <span class="code-line">  <span class="code-property">passion</span>: <span class="code-string">"Quality Assurance"</span></span>
+                        <span class="code-line">};</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <div class="email-container">
+                        <button id="email-btn" class="social-link email-btn">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                        <div id="email-tooltip" class="email-tooltip">
+                            <span id="email-text">nihattekiner@gmail.com</span>
+                            <button id="copy-email" class="copy-btn">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="https://github.com/nihattekiner" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/kazimnihattekiner" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://youtube.com/@nihattekiner" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://medium.com/@kazimnihattekiner" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section hidden-fade-in">
+        <div class="container">
+            <h2 class="section-title" data-i18n-key="about.title">Hakkımda</h2>
+            <div class="about-content">
+                <p data-i18n-key="about.p1">
+                    Yazılım test mühendisi olarak, kaliteli yazılım geliştirme süreçlerinde önemli rol oynuyorum. 
+                    Modern test araçları ve metodolojileri kullanarak, yazılım projelerinin güvenilirliğini sağlıyorum.
+                </p>
+                <p data-i18n-key="about.p2">
+                    Otomasyon testleri, performans testleri ve API testleri konularında deneyim sahibiyim. 
+                    Sürekli öğrenme ve gelişim odaklı yaklaşımımla, teknolojideki yenilikleri takip ediyorum.
+                </p>
+                <p data-i18n-key="about.p3">
+                    Ekip çalışmasına yatkın, problem çözme odaklı ve detay odaklı çalışma tarzımla, 
+                    projelerin başarıya ulaşmasında katkı sağlıyorum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section hidden-fade-in">
+        <div class="container">
+            <h2 class="section-title" data-i18n-key="experience.title">İş Deneyimim</h2>
+            <div class="experience-timeline">
+                <div class="experience-card">
+                    <div class="experience-date">2023 - Günümüz</div>
+                    <div class="experience-content">
+                        <h3 data-i18n-key="experience.job1.title">Kıdemli Test Mühendisi</h3>
+                        <h4 data-i18n-key="experience.job1.company">ABC Teknoloji</h4>
+                        <p data-i18n-key="experience.job1.description">
+                            Web ve mobil uygulamalar için kapsamlı test stratejileri geliştirme, 
+                            otomasyon test süreçlerini yönetme ve ekip liderliği yapma.
+                        </p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-date">2021 - 2023</div>
+                    <div class="experience-content">
+                        <h3 data-i18n-key="experience.job2.title">Test Mühendisi</h3>
+                        <h4 data-i18n-key="experience.job2.company">XYZ Yazılım</h4>
+                        <p data-i18n-key="experience.job2.description">
+                            Manuel ve otomatik testler gerçekleştirme, test senaryoları yazma, 
+                            hata raporlama ve test dokümantasyonu hazırlama.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section hidden-fade-in">
+        <div class="container">
+            <h2 class="section-title" data-i18n-key="education.title">Eğitim ve Sertifikalar</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 data-i18n-key="education.degree.title">Bilgisayar Mühendisliği</h3>
+                    <h4 data-i18n-key="education.degree.school">ABC Üniversitesi</h4>
+                    <span class="education-year">2017 - 2021</span>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 data-i18n-key="education.cert1.title">ISTQB Foundation Level</h3>
+                    <h4 data-i18n-key="education.cert1.org">ISTQB</h4>
+                    <span class="education-year">2022</span>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 data-i18n-key="education.cert2.title">Selenium WebDriver</h3>
+                    <h4 data-i18n-key="education.cert2.org">Udemy</h4>
+                    <span class="education-year">2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section hidden-fade-in">
+        <div class="container">
+            <h2 class="section-title" data-i18n-key="projects.title">Projelerim</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n-key="projects.project1.title">E-Ticaret Test Otomasyonu</h3>
+                        <p data-i18n-key="projects.project1.description">
+                            Selenium ve TestNG kullanarak geliştirilen kapsamlı e-ticaret test otomasyonu projesi.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">TestNG</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n-key="projects.project2.title">Mobil Uygulama Testi</h3>
+                        <p data-i18n-key="projects.project2.description">
+                            Cypress kullanarak geliştirilen mobil uygulama test framework'ü.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Cypress</span>
+                            <span class="tech-tag">Mocha</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n-key="projects.project3.title">API Test Suite</h3>
+                        <p data-i18n-key="projects.project3.description">
+                            REST Assured ile geliştirilmiş kapsamlı API test paketi.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">REST Assured</span>
+                            <span class="tech-tag">JUnit</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section hidden-fade-in">
+        <div class="container">
+            <h2 class="section-title" data-i18n-key="skills.title">Kullandığım Araçlar</h2>
+            <div class="skills-grid">
+                <div class="skill-card java">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-logo">
+                        <span class="skill-name">Java</span>
+                    </div>
+                </div>
+                <div class="skill-card javascript">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-logo">
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card cucumber">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cucumber/cucumber-plain.svg" alt="Cucumber" class="skill-logo">
+                        <span class="skill-name">Cucumber</span>
+                    </div>
+                </div>
+                <div class="skill-card selenium">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" class="skill-logo">
+                        <span class="skill-name">Selenium</span>
+                    </div>
+                </div>
+                <div class="skill-card testng">
+                    <div class="skill-content">
+                        <img src="https://avatars.githubusercontent.com/u/12528662?s=200&v=4" alt="TestNG" class="skill-logo">
+                        <span class="skill-name">TestNG</span>
+                    </div>
+                </div>
+                <div class="skill-card rest">
+                    <div class="skill-content">
+                        <img src="https://rest-assured.io/img/logo-transparent.png" alt="REST Assured" class="skill-logo">
+                        <span class="skill-name">REST Assured</span>
+                    </div>
+                </div>
+                <div class="skill-card cypress">
+                    <div class="skill-content">
+                        <img src="https://asset.brandfetch.io/idIq_kF0rb/idv3zwmSiY.jpeg" alt="Cypress" class="skill-logo">
+                        <span class="skill-name">Cypress</span>
+                    </div>
+                </div>
+                <div class="skill-card playwright">
+                    <div class="skill-content">
+                        <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright" class="skill-logo">
+                        <span class="skill-name">Playwright</span>
+                    </div>
+                </div>
+                <div class="skill-card html">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-logo">
+                        <span class="skill-name">HTML & CSS</span>
+                    </div>
+                </div>
+                <div class="skill-card git">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-logo">
+                        <span class="skill-name">Git</span>
+                    </div>
+                </div>
+                <div class="skill-card jenkins">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" class="skill-logo">
+                        <span class="skill-name">Jenkins</span>
+                    </div>
+                </div>
+                <div class="skill-card postman">
+                    <div class="skill-content">
+                        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" class="skill-logo">
+                        <span class="skill-name">Postman</span>
+                    </div>
+                </div>
+                <div class="skill-card sql">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" class="skill-logo">
+                        <span class="skill-name">SQL Server</span>
+                    </div>
+                </div>
+                <div class="skill-card ai">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="AI" class="skill-logo">
+                        <span class="skill-name">AI Prompting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section hidden-fade-in">
+        <div class="container">
+            <h2 class="section-title" data-i18n-key="contact.title">İletişim</h2>
+            <div class="contact-content">
+                <p data-i18n-key="contact.description">
+                    Benimle iletişime geçmek için aşağıdaki kanalları kullanabilirsiniz.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:nihattekiner@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>nihattekiner@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/kazimnihattekiner" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n-key="footer.copyright">© 2025 Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

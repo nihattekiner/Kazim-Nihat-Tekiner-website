@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "experience": "Deneyim",
+    "education": "Eğitim",
+    "projects": "Projeler",
+    "skills": "Yetenekler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "greeting": "Merhaba, ben",
+    "title": "Merhaba, ben Berkcan",
+    "subtitle": "Yazılım Test Mühendisi"
+  },
+  "code": {
+    "title": "Software Development In Test"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "p1": "Yazılım test mühendisi olarak, kaliteli yazılım geliştirme süreçlerinde önemli rol oynuyorum. Modern test araçları ve metodolojileri kullanarak, yazılım projelerinin güvenilirliğini sağlıyorum.",
+    "p2": "Otomasyon testleri, performans testleri ve API testleri konularında deneyim sahibiyim. Sürekli öğrenme ve gelişim odaklı yaklaşımımla, teknolojideki yenilikleri takip ediyorum.",
+    "p3": "Ekip çalışmasına yatkın, problem çözme odaklı ve detay odaklı çalışma tarzımla, projelerin başarıya ulaşmasında katkı sağlıyorum."
+  },
+  "experience": {
+    "title": "İş Deneyimim",
+    "job1": {
+      "title": "Kıdemli Test Mühendisi",
+      "company": "ABC Teknoloji",
+      "description": "Web ve mobil uygulamalar için kapsamlı test stratejileri geliştirme, otomasyon test süreçlerini yönetme ve ekip liderliği yapma."
+    },
+    "job2": {
+      "title": "Test Mühendisi",
+      "company": "XYZ Yazılım",
+      "description": "Manuel ve otomatik testler gerçekleştirme, test senaryoları yazma, hata raporlama ve test dokümantasyonu hazırlama."
+    }
+  },
+  "education": {
+    "title": "Eğitim ve Sertifikalar",
+    "degree": {
+      "title": "Bilgisayar Mühendisliği",
+      "school": "ABC Üniversitesi"
+    },
+    "cert1": {
+      "title": "ISTQB Foundation Level",
+      "org": "ISTQB"
+    },
+    "cert2": {
+      "title": "Selenium WebDriver",
+      "org": "Udemy"
+    }
+  },
+  "projects": {
+    "title": "Projelerim",
+    "project1": {
+      "title": "E-Ticaret Test Otomasyonu",
+      "description": "Selenium ve TestNG kullanarak geliştirilen kapsamlı e-ticaret test otomasyonu projesi. Kullanıcı kayıt, giriş, ürün arama ve satın alma süreçlerini kapsayan test senaryoları."
+    },
+    "project2": {
+      "title": "Mobil Uygulama Testi",
+      "description": "Cypress kullanarak geliştirilen mobil uygulama test framework'ü. Cross-browser testler ve responsive tasarım kontrollerini içeren kapsamlı test paketi."
+    },
+    "project3": {
+      "title": "API Test Suite",
+      "description": "REST Assured ile geliştirilmiş kapsamlı API test paketi. CRUD operasyonları, authentication ve data validation testlerini içeren framework."
+    }
+  },
+  "skills": {
+    "title": "Kullandığım Araçlar"
+  },
+  "contact": {
+    "title": "İletişim",
+    "description": "Benimle iletişime geçmek için aşağıdaki kanalları kullanabilirsiniz. Yeni fırsatlar ve işbirlikleri için her zaman açığım."
+  },
+  "footer": {
+    "copyright": "© 2025 Tüm hakları saklıdır."
+  }
+}

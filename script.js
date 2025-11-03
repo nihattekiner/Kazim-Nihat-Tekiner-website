@@ -4,8 +4,6 @@ let translations = {};
 
 // DOM Elements
 const languageModal = document.getElementById('language-modal');
-const themeToggle = document.getElementById('theme-toggle');
-const languageToggle = document.getElementById('language-toggle');
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -19,13 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeApp() {
     // Check for saved language preference
     const savedLanguage = localStorage.getItem('preferred-language');
-    const savedTheme = localStorage.getItem('preferred-theme');
     
-    // Apply saved theme
-    if (savedTheme) {
-        document.body.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-    }
+    // Set default dark theme
+    document.body.setAttribute('data-theme', 'dark');
     
     // Load language
     if (savedLanguage) {
@@ -57,11 +51,11 @@ function setupEventListeners() {
         });
     });
     
-    // Theme toggle button
-    themeToggle.addEventListener('click', toggleTheme);
+
     
     // Email functionality
     setupEmailFunctionality();
+    setupContactEmailFunctionality();
     
     // Close modal when clicking outside
     languageModal.addEventListener('click', function(e) {
@@ -147,24 +141,7 @@ function hideLanguageModal() {
     document.body.style.overflow = 'auto';
 }
 
-// Theme functions
-function toggleTheme() {
-    const currentTheme = document.body.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    document.body.setAttribute('data-theme', newTheme);
-    localStorage.setItem('preferred-theme', newTheme);
-    updateThemeIcon(newTheme);
-}
 
-function updateThemeIcon(theme) {
-    const icon = themeToggle.querySelector('i');
-    if (theme === 'dark') {
-        icon.className = 'fas fa-sun';
-    } else {
-        icon.className = 'fas fa-moon';
-    }
-}
 
 // Scroll animations using Intersection Observer
 function setupScrollAnimations() {
@@ -411,7 +388,8 @@ function setupEmailFunctionality() {
     function showCopySuccess() {
         // Create temporary success message
         const successMsg = document.createElement('div');
-        successMsg.textContent = 'Email kopyalandı!';
+        const message = currentLanguage === 'en' ? 'Email copied!' : 'Email kopyalandı!';
+        successMsg.textContent = message;
         successMsg.style.cssText = `
             position: fixed;
             top: 20px;
@@ -433,6 +411,31 @@ function setupEmailFunctionality() {
                 document.body.removeChild(successMsg);
             }, 300);
         }, 2000);
+    }
+}
+
+// Contact email functionality
+function setupContactEmailFunctionality() {
+    const contactEmailBtn = document.getElementById('contact-email-btn');
+    
+    if (contactEmailBtn) {
+        contactEmailBtn.addEventListener('click', async function(e) {
+            e.preventDefault();
+            
+            try {
+                await navigator.clipboard.writeText('nihattekiner@gmail.com');
+                showCopySuccess();
+            } catch (err) {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = 'nihattekiner@gmail.com';
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showCopySuccess();
+            }
+        });
     }
 }
 

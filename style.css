@@ -170,7 +170,7 @@ body::before {
     top: 0;
     background: rgba(26, 26, 26, 0.9);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: none;
     z-index: 1000;
     padding: 15px 0;
 }
@@ -180,8 +180,9 @@ body::before {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .nav-links {
@@ -211,6 +212,8 @@ body::before {
     display: flex;
     gap: 15px;
     align-items: center;
+    position: absolute;
+    right: 20px;
 }
 
 .control-btn {
@@ -511,6 +514,11 @@ body::before {
 /* Sections */
 .section {
     padding: 100px 0;
+    background: 
+        radial-gradient(ellipse at center, rgba(255, 0, 255, 0.08) 0%, transparent 70%),
+        radial-gradient(ellipse at 80% 20%, rgba(0, 255, 255, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 80%, rgba(139, 92, 246, 0.06) 0%, transparent 50%);
+    position: relative;
 }
 
 .section-title {
@@ -545,7 +553,7 @@ body::before {
 
 .experience-card {
     background: var(--gradient-card);
-    border: 1px solid var(--border-color);
+    border: none;
     border-radius: 16px;
     padding: 30px;
     margin-bottom: 30px;
@@ -556,7 +564,6 @@ body::before {
 .experience-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    border-color: var(--primary-neon);
 }
 
 .experience-date {
@@ -586,7 +593,7 @@ body::before {
 
 .education-card {
     background: var(--gradient-card);
-    border: 1px solid var(--border-color);
+    border: none;
     border-radius: 16px;
     padding: 30px;
     text-align: center;
@@ -597,7 +604,6 @@ body::before {
 .education-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    border-color: var(--secondary-neon);
 }
 
 .education-icon {
@@ -630,7 +636,7 @@ body::before {
 
 .project-card {
     background: var(--gradient-card);
-    border: 1px solid var(--border-color);
+    border: none;
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -640,7 +646,6 @@ body::before {
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-    border-color: var(--primary-neon);
 }
 
 .project-image {
@@ -709,7 +714,7 @@ body::before {
 
 .skill-card {
     background: var(--gradient-card);
-    border: 1px solid var(--border-color);
+    border: none;
     border-radius: 16px;
     padding: 20px;
     transition: all 0.3s ease;
@@ -725,6 +730,20 @@ body::before {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
+
+/* Skill Card Glow Effects */
+.skill-card.java:hover { box-shadow: 0 0 20px rgba(176, 114, 25, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.javascript:hover { box-shadow: 0 0 20px rgba(241, 224, 90, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.selenium:hover { box-shadow: 0 0 20px rgba(139, 0, 0, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.testng:hover { box-shadow: 0 0 20px rgba(135, 206, 235, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.cucumber:hover { box-shadow: 0 0 20px rgba(0, 100, 0, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.rest:hover { box-shadow: 0 0 20px rgba(0, 102, 204, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.postman:hover { box-shadow: 0 0 20px rgba(255, 108, 55, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.cypress:hover { box-shadow: 0 0 20px rgba(144, 238, 144, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.playwright:hover { box-shadow: 0 0 20px rgba(75, 0, 130, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.appium:hover { box-shadow: 0 0 20px rgba(255, 108, 55, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.sql:hover { box-shadow: 0 0 20px rgba(0, 0, 139, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
+.skill-card.azure:hover { box-shadow: 0 0 20px rgba(0, 120, 212, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2); }
 
 .skill-content {
     display: flex;
@@ -764,47 +783,45 @@ body::before {
 }
 
 /* Skill Card Colors */
-.skill-card.java { border-color: #f89820; }
-.skill-card.java i { color: #f89820; }
+.skill-card.java { border-color: #b07219; }
+.skill-card.java i { color: #b07219; }
 
-.skill-card.javascript { border-color: #f7df1e; }
-.skill-card.javascript i { color: #f7df1e; }
+.skill-card.javascript { border-color: #f1e05a; }
+.skill-card.javascript i { color: #f1e05a; }
 
-.skill-card.cucumber { border-color: #23d96c; }
-.skill-card.cucumber i { color: #23d96c; }
+.skill-card.selenium { border-color: #8b0000; }
+.skill-card.selenium i { color: #8b0000; }
 
-.skill-card.selenium { border-color: #43b02a; }
-.skill-card.selenium i { color: #43b02a; }
+.skill-card.testng { border-color: #87ceeb; }
+.skill-card.testng i { color: #87ceeb; }
 
-.skill-card.testng { border-color: #ff6b35; }
-.skill-card.testng i { color: #ff6b35; }
+.skill-card.cucumber { border-color: #006400; }
+.skill-card.cucumber i { color: #006400; }
 
-.skill-card.rest { border-color: #61dafb; }
-.skill-card.rest i { color: #61dafb; }
-
-.skill-card.cypress { border-color: #17202c; }
-.skill-card.cypress i { color: #04c38e; }
-
-.skill-card.playwright { border-color: #2ecc71; }
-.skill-card.playwright i { color: #2ecc71; }
-
-.skill-card.html { border-color: #e34c26; }
-.skill-card.html i { color: #e34c26; }
-
-.skill-card.git { border-color: #f05032; }
-.skill-card.git i { color: #f05032; }
-
-.skill-card.jenkins { border-color: #d33833; }
-.skill-card.jenkins i { color: #d33833; }
+.skill-card.rest { border-color: #0066cc; }
+.skill-card.rest i { color: #0066cc; }
 
 .skill-card.postman { border-color: #ff6c37; }
 .skill-card.postman i { color: #ff6c37; }
 
-.skill-card.sql { border-color: #336791; }
-.skill-card.sql i { color: #336791; }
+.skill-card.cypress { border-color: #90ee90; }
+.skill-card.cypress i { color: #90ee90; }
 
-.skill-card.ai { border-color: #8b5cf6; }
-.skill-card.ai i { color: #8b5cf6; }
+.skill-card.playwright { border-color: #4b0082; }
+.skill-card.playwright i { color: #4b0082; }
+
+.skill-card.appium { border-color: #ff6c37; }
+.skill-card.appium i { color: #ff6c37; }
+.skill-card.appium .skill-logo { 
+    width: 100px; 
+    height: 100px; 
+}
+
+.skill-card.sql { border-color: #00008b; }
+.skill-card.sql i { color: #00008b; }
+
+.skill-card.azure { border-color: #0078d4; }
+.skill-card.azure i { color: #0078d4; }
 
 /* Contact Section */
 .contact-content {
@@ -837,6 +854,10 @@ body::before {
     border-radius: 12px;
     font-weight: 600;
     transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
 }
 
 .contact-link:hover {
@@ -851,7 +872,7 @@ body::before {
 /* Footer */
 .footer {
     background: var(--background-secondary);
-    border-top: 1px solid var(--border-color);
+    border-top: none;
     padding: 30px 0;
     text-align: center;
 }
@@ -874,12 +895,17 @@ body::before {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-container {
+        justify-content: space-between;
+    }
+    
     .nav-links {
         display: none;
     }
     
     .nav-controls {
         gap: 10px;
+        position: static;
     }
     
     .hero-title {

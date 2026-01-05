@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "experience": "Deneyim",
+    "education": "Eğitim",
+    "projects": "Projeler",
+    "skills": "Yetenekler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "greeting": "Merhaba, ben",
+    "subtitle": "Yazılım Test Mühendisi"
+  },
+  "code": {
+    "title": "Software Development In Test",
+    "cv_link": "Google Drive CV Linki"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "p1": "Kurumsal seviyedeki projelerde kalite güvence çözümleri sunan, 4+ yıllık deneyime sahip bir Yazılım QA Mühendisiyim. aMVG'de başlayan kariyer yolculuğuma, şirketin GroupM (WPP) bünyesine katılmasıyla devam ettim. Bu süreçte Digiturk, P&G (BanaBak), Borusan, Vodafone, Turkcell, Turk Telekom, Ispark, Shell, Opet gibi sektör devi markaların uçtan uca test süreçlerini yönettim.",
+    "p2": "Teknolojiyi yakından takip eden biri olarak; şu anda test süreçlerini modernleştirmek adına Playwright üzerine yoğunlaşıyor ve Yapay Zeka (AI) tabanlı çözümleri otomasyon süreçlerine entegre ediyorum."
+  },
+  "experience": {
+    "title": "İş Deneyimim",
+    "job1": {
+      "title": "Yazılım Test Mühendisi / Software Development Engineer in Test (SDET)",
+      "company": "GroupM",
+      "description": "aMVG bünyesinde başladığım görevim, şirketin GroupM (WPP) tarafından satın alınmasıyla (acquisition) küresel bir boyuta taşındı. Mevcut ekip yapısı, yürütülen projeler ve hizmet verilen sektör devi müşteri portföyü ile çalışmalarımız, GroupM çatısı altında kesintisiz ve aktif bir şekilde devam etti.",
+      "responsibilities_title": "Temel Sorumluluklar:",
+      "resp1": "Automation Framework'leri geliştirme ve sürdürme (Java, Selenium WebDriver, TestNG, Cucumber)",
+      "resp2": "UI/Manual testing süreçlerini yönetme ve test senaryoları oluşturma",
+      "resp3": "Appium ile mobil uygulama testleri gerçekleştirme",
+      "resp4": "API testing (RestAssured, Postman) ve entegrasyon testleri",
+      "resp5": "SQL Grey-box testing ve veritabanı doğrulamaları",
+      "resp6": "Azure DevOps CI/CD pipeline'ları kurma ve yönetme",
+      "resp7": "Jira/Xray ile test yönetimi ve raporlama",
+      "resp8": "R&D çalışmaları: Playwright, AI destekli test süreçleri ve Python"
+    },
+    "job2": {
+      "title": "Yazılım Test Mühendisi / Software Development Engineer in Test (SDET)",
+      "company": "aMVG",
+      "description": "Agile ekipler içerisinde QA olarak görev alarak; Digiturk, P&G (BanaBak), Borusan, Vodafone, Turkcell, Turk Telekom, Ispark, Shell, Opet sektör devi müşterilerin Web, API ve Mobil projelerinde uçtan uca kalite güvence süreçlerini yönettim.",
+      "responsibilities_title": "Temel Sorumluluklar:",
+      "resp1": "Automation Framework'leri geliştirme ve sürdürme (Java, Selenium WebDriver, TestNG, Cucumber)",
+      "resp2": "UI/Manual testing süreçlerini yönetme ve test senaryoları oluşturma",
+      "resp3": "Appium ile mobil uygulama testleri gerçekleştirme",
+      "resp4": "API testing (RestAssured, Postman) ve entegrasyon testleri",
+      "resp5": "SQL Grey-box testing ve veritabanı doğrulamaları",
+      "resp6": "Azure DevOps CI/CD pipeline'ları kurma ve yönetme",
+      "resp7": "Jira/Xray ile test yönetimi ve raporlama",
+      "resp8": "R&D çalışmaları: Playwright, AI destekli test süreçleri ve Python"
+    }
+  },
+  "education": {
+    "title": "Eğitim ve Sertifikalar",
+    "degree": {
+      "title": "Harita Mühendisliği",
+      "school": "Konya Teknik Üniversitesi (Selçuk Üniversitesi)"
+    },
+    "bootcamp": {
+      "title": "FULL-STACK AUTOMATION ENGINEERING PROGRAM",
+      "org": "TechPro Education (Pembroke Pines, FL, USA)"
+    },
+    "cert1": {
+      "title": "Selenium WebDriver",
+      "org": "Udemy"
+    },
+    "cert2": {
+      "title": "API and API Testing",
+      "org": "BTK Akademi"
+    },
+    "cert3": {
+      "title": "Version Control Systems",
+      "org": "Global AI Hub"
+    },
+    "cert4": {
+      "title": "Automating your API tests with Rest Assured",
+      "org": "Test Automation University"
+    },
+    "cert5": {
+      "title": "Introduction to TestNG",
+      "org": "Test Automation University"
+    }
+  },
+  "projects": {
+    "title": "Projelerim",
+    "statement": "Aktif olarak Playwright, AI Destekli Test Süreçleri ve Python üzerine Ar-Ge çalışmalarımı sürdürmekteyim. Bu kapsamda geliştirmekte olduğum yeni nesil test otomasyon framework'leri ve projelerim şu an için gizli (private) olarak yürütülmektedir."
+  },
+  "skills": {
+    "title": "Kullandığım Araçlar"
+  },
+  "contact": {
+    "title": "İletişim",
+    "description": "Benimle iletişime geçmek için aşağıdaki kanalları kullanabilirsiniz."
+  },
+  "footer": {
+    "copyright": "© 2025 Tüm hakları saklıdır."
+  }
+}

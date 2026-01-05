@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "subtitle": "Software Development Engineer in Test (SDET)"
+  },
+  "code": {
+    "title": "Software Development In Test",
+    "cv_link": "Google Drive CV Link"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Software QA Engineer with 4+ years of experience delivering quality assurance solutions for enterprise-grade projects. My career journey began at aMVG and evolved through its acquisition by GroupM (WPP), where I managed end-to-end testing processes for major clients including Digiturk, P&G (BanaBak), Borusan, Vodafone, Turkcell, Turk Telekom, Ispark, Shell, and Opet.",
+    "p2": "I am currently focused on modernizing testing workflows by mastering Playwright and integrating AI-driven solutions to enhance efficiency."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "job1": {
+      "title": "Software Development Engineer in Test (SDET)",
+      "company": "GroupM",
+      "description": "My role, which began at aMVG, evolved into a global scope following the company's acquisition by GroupM (WPP). The existing team structure, ongoing projects, and the portfolio of industry-leading clients continued seamlessly and actively under the GroupM umbrella.",
+      "responsibilities_title": "Key Responsibilities:",
+      "resp1": "Developing and maintaining Automation Frameworks (Java, Selenium WebDriver, TestNG, Cucumber)",
+      "resp2": "Managing UI/Manual testing processes and creating test scenarios",
+      "resp3": "Performing mobile application testing with Appium",
+      "resp4": "API testing (RestAssured, Postman) and integration testing",
+      "resp5": "SQL Grey-box testing and database validations",
+      "resp6": "Setting up and managing Azure DevOps CI/CD pipelines",
+      "resp7": "Test management and reporting with Jira/Xray",
+      "resp8": "R&D work: Playwright, AI-driven testing processes, and Python"
+    },
+    "job2": {
+      "title": "Software Development Engineer in Test (SDET)",
+      "company": "aMVG",
+      "description": "Working as a QA within Agile teams, I managed end-to-end quality assurance processes for the Web, API, and Mobile projects of industry giants such as Digiturk, P&G (BanaBak), Borusan, Vodafone, Turkcell, Turk Telekom, Ispark, Shell, and Opet.",
+      "responsibilities_title": "Key Responsibilities:",
+      "resp1": "Developing and maintaining Automation Frameworks (Java, Selenium WebDriver, TestNG, Cucumber)",
+      "resp2": "Managing UI/Manual testing processes and creating test scenarios",
+      "resp3": "Performing mobile application testing with Appium",
+      "resp4": "API testing (RestAssured, Postman) and integration testing",
+      "resp5": "SQL Grey-box testing and database validations",
+      "resp6": "Setting up and managing Azure DevOps CI/CD pipelines",
+      "resp7": "Test management and reporting with Jira/Xray",
+      "resp8": "R&D work: Playwright, AI-driven testing processes, and Python"
+    }
+  },
+  "education": {
+    "title": "Education & Certifications",
+    "degree": {
+      "title": "Geomatics Engineering",
+      "school": "Konya Technical University (Selcuk University)"
+    },
+    "bootcamp": {
+      "title": "FULL-STACK AUTOMATION ENGINEERING PROGRAM",
+      "org": "TechPro Education (Pembroke Pines, FL, USA)"
+    },
+    "cert1": {
+      "title": "Selenium WebDriver",
+      "org": "Udemy"
+    },
+    "cert2": {
+      "title": "API and API Testing",
+      "org": "BTK Academy"
+    },
+    "cert3": {
+      "title": "Version Control Systems",
+      "org": "Global AI Hub"
+    },
+    "cert4": {
+      "title": "Automating your API tests with Rest Assured",
+      "org": "Test Automation University"
+    },
+    "cert5": {
+      "title": "Introduction to TestNG",
+      "org": "Test Automation University"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "statement": "I am actively conducting R&D on Playwright, AI-Driven Testing processes, and Python. The next-generation test automation frameworks and projects I am developing in this context are currently being maintained in private repositories."
+  },
+  "skills": {
+    "title": "Tools & Skills"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "You can use the channels below to get in touch with me."
+  },
+  "footer": {
+    "copyright": "© 2025 All rights reserved."
+  }
+}
